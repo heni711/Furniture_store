@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Furniture Store</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">FurnitureStore</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="shop.html">Shop</a>
+            <a href="cart.html">Cart</a>
+            <a href="order-history.html">Order History</a>
+            <a href="#">Login/Register</a>
+            <input type="text" placeholder="Search..." id="search-bar">
+        </nav>
+    </header>
+
+    <!-- Filters -->
+    <main>
+        <aside id="filters">
+            <h3>Filters</h3>
+            <label for="category">Category:</label>
+            <select id="category">
+                <option value="all">All</option>
+                <option value="sofas">Sofas</option>
+                <option value="tables">Tables</option>
+            </select>
+
+            <label for="price-range">Price Range:</label>
+            <input type="range" id="price-range" min="100" max="1000" step="50">
+
+            <label for="sort">Sort By:</label>
+            <select id="sort">
+                <option value="price">Price</option>
+            </select>
+        </aside>
+
+        <!-- Product Grid -->
+        <section id="product-listing">
+            <div class="product-grid">
+                <div class="product">
+                    <img src="../images/sofa.jpg" alt="Sofa">
+                    <h3>Modern Sofa</h3>
+                    <p>$799.99</p>
+                    <a href="product-details.html">View Details</a>
+                </div>
+                <div class="product">
+                    <img src="../images/table.jpg" alt="Table">
+                    <h3>Dining Table</h3>
+                    <p>$499.99</p>
+                    <a href="product-details.html">View Details</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 FurnitureStore. All Rights Reserved.</p>
+        <a href="#">About Us</a> | 
+        <a href="#">Contact</a> | 
+        <a href="#">Terms</a> | 
+        <a href="#">Privacy</a>
+    </footer>
+</body>
+</html>
